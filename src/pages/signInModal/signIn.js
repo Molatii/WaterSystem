@@ -24,8 +24,8 @@ const SignInModal = ({ onClose, onOpen, isOpen }) => {
   });
 
   const navigate = useNavigate();
-  const registerUser = () => {
-    navigate('/sign-up');
+  const register = () => {
+    navigate('/register');
   };
 
   const initialRef = React.useRef(null);
@@ -170,8 +170,8 @@ const SignInModal = ({ onClose, onOpen, isOpen }) => {
                 colorScheme="white"
                 variant="outline"
                 px={15}
+                onClick={register}
                 mr={3}
-                onClick={registerUser}
                 w="40%"
                 mb="2%"
                 _hover={{ bg: '#00B4D8', color: 'white' }}
